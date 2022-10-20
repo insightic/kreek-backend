@@ -12,7 +12,8 @@ from dateutil.relativedelta import relativedelta
 
 # myclient = pymongo.MongoClient('mongodb://currency:Qw123456789@localhost:27017/', connect=False)
 myclient = pymongo.MongoClient('mongodb://localhost:27017/', connect=False)
-mydb = myclient['creek']
+mydb = myclient['kreek_testnet']
+# mydb = myclient['kreek_mainnet']
 myauths = mydb["userInfo"]
 logs = mydb["logs"]
 coin = mydb["coinInfo"]
